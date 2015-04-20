@@ -1,4 +1,4 @@
-package org.wogsland.maxwell.potatomod;
+package org.wogsland.maxwell.servermod;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -10,7 +10,7 @@ public class ChatItems {
 	@SubscribeEvent
 	public void giveItems(ServerChatEvent event){
 		if (event.message.contains("potato")) {
-			event.player.inventory.addItemStackToInventory(new ItemStack(Items.potato, 64));
+			event.player.inventory.addItemStackToInventory(new ItemStack(Items.potato, 1));
 		}
 	}
 }
